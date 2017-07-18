@@ -16,10 +16,14 @@ namespace cs_mSort
 
             sort.Sort(ar);
 
-            for(int i = 0; i < 10; i++)
+            Console.WriteLine();
+            for (int i = 0; i < 10; i++)
             {
-                Console.WriteLine(ar[i]);                
-            }            
+                Console.Write(ar[i]);
+                if (i < 9 )
+                    Console.Write(" ");
+            }
+            Console.WriteLine();
         }
     }
 }
