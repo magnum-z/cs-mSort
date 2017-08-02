@@ -9,17 +9,7 @@ namespace cs_mSort
     class QuickSort
     {
         Random _pivotRng = new Random();
-
-        void Swap(int[] items, int left, int right)
-        {
-            if (left != right)
-            {
-                int temp = items[left];
-                items[left] = items[right];
-                items[right] = temp;
-            }
-        }
-
+                
         public void Sort(int[] items)
         {
             quicksort(items, 0, items.Length - 1);
@@ -41,7 +31,7 @@ namespace cs_mSort
         {
             int pivotValue = items[pivotIndex];
 
-            Swap(items, pivotIndex, right);
+            Program.SwapItems(items, pivotIndex, right);
 
             int storeIndex = left;
 
@@ -49,12 +39,12 @@ namespace cs_mSort
             {
                 if (items[i].CompareTo(pivotValue) < 0)
                 {
-                    Swap(items, i, storeIndex);
+                    Program.SwapItems(items, i, storeIndex);
                     storeIndex += 1;
                 }
             }
 
-            Swap(items, storeIndex, right);
+            Program.SwapItems(items, storeIndex, right);
             return storeIndex;
         }
 

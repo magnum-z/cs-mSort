@@ -4,10 +4,10 @@
   <PropertyGroup>
     <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
     <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
-    <ProjectGuid>{928744C1-C719-4934-BE6A-0A8CAB3ED0DB}</ProjectGuid>
+    <ProjectGuid>{317DE1DC-9B90-4E32-B792-49930B64EC6B}</ProjectGuid>
     <OutputType>Exe</OutputType>
-    <RootNamespace>cs_mSort</RootNamespace>
-    <AssemblyName>cs-mSort</AssemblyName>
+    <RootNamespace>ArrayOfRandom</RootNamespace>
+    <AssemblyName>ArrayOfRandom</AssemblyName>
     <TargetFrameworkVersion>v4.5.2</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
     <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
@@ -42,10 +42,8 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="BubbleSort.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
-    <Compile Include="QuickSort.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />
